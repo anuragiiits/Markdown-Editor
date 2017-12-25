@@ -7,10 +7,14 @@ class Header extends Component{
     onBinsClicked(event){
         event.preventDefault();
 
-        Meteor.call('bins.insert');
+        Meteor.call('bins.insert',(error, binId)=>{
+            //console.log(this.props.history);//.push(`bins/${binId}`);
+            this.props.history.push(`bins/${binId}`);
+        });
     }
     
     render(){
+        //console.log(this.props);
         return(
             <nav className="nav navbar-default">
                 <div className="navbar-header">
