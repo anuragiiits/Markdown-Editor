@@ -7,6 +7,9 @@ class BinsMain extends Component{
     render(){
         //console.log(this.props.match.params.binId);
         //console.log(this.props.bin);
+        if(!this.props.bin){
+            return <div>Loading...</div>
+        }
         return(
             <div> 
                 <BinsEditor bin={this.props.bin} />
