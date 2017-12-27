@@ -9,7 +9,7 @@ class Header extends Component{
 
         Meteor.call('bins.insert',(error, binId)=>{
             //console.log(this.props.history);//.push(`bins/${binId}`);
-            this.props.history.push(`bins/${binId}`);
+            this.props.history.push(`/bins/${binId}`);
         });
     }
     
