@@ -1,9 +1,13 @@
 # Markdown-editor
-A Markdown editor project made purely in Meteor and React.
+A Markdown editor project made purely in Meteor and React. It has the sign up feature by which you can save all your
+markdowns. You can also test the app anonymously by working with your bins without signing in.
 
-To run the application, clone the repository on your local machine and then follow these steps:
-Step 1: Open the terminal or command prompt and go into the project root folder, i.e. Markdown-editor
+To run the application follow these steps:
 
-Step 2: To install the required dependencies, run th command `meteor npm install` and then `meteor run` *or* if you have facebook yarn installed, 
-        just run the command `yarn` and then `meteor`
-                    
+Step 1: Clone the repository using command `git clone https://github.com/anuragiiits/URL-Shortener` or from the direct download option.
+
+Step 2: Navigate into the repository in your local drive.
+
+Step 3: If you have facebook yarn installed, just run the command `yarn` to install the dependencies or Run command `meteor npm install`
+
+Step 4:Run command `meteor` to start the server.
