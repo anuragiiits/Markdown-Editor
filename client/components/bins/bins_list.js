@@ -31,11 +31,19 @@ class BinsList extends Component{
 
     render(){
         //console.log(this.props.bins);
-        return(
-            <ul className="list-group">
-                {this.renderList()}
-            </ul>
-        );
+        //console.log(Meteor.userId());
+        if(Meteor.userId() == null){
+            return(
+                <h1 className="text text-primary text-center font-italic">Sign in to continue</h1>
+            );
+        }
+        else{
+            return(
+                <ul className="list-group">
+                    {this.renderList()}
+                </ul>
+            );
+        }
     };
 }
 

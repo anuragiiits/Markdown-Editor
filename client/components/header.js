@@ -8,12 +8,12 @@ class Header extends Component{
     onBinsClicked(event){
         event.preventDefault();
         //console.log(Meteor.userId());
-        //if(Meteor.userId() != null){  //to remove the feature of anonymous user
-        Meteor.call('bins.insert',(error, binId)=>{
-            //console.log(this.props.history);//.push(`bins/${binId}`);
-            this.props.history.push(`/bins/${binId}`);
-        });
-        //}
+        if(Meteor.userId() != null){  //to remove the feature of anonymous user
+            Meteor.call('bins.insert',(error, binId)=>{
+                //console.log(this.props.history);//.push(`bins/${binId}`);
+                this.props.history.push(`/bins/${binId}`);
+            });
+        }
         
     }
     
