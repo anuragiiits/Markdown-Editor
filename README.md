@@ -4,7 +4,7 @@ markdowns. You can also test the app anonymously by working with your bins witho
 
 To run the application follow these steps:
 
-Step 1: Clone the repository using command `git clone https://github.com/anuragiiits/URL-Shortener` or from the direct download option.
+Step 1: Clone the repository using command `git clone https://github.com/anuragiiits/Markdown-editor` or from the direct download option.
 
 Step 2: Navigate into the repository in your local drive.
 
